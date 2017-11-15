@@ -71,6 +71,7 @@ PasswordNotFound	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .
 PasswordNotFound	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class PasswordNotFound(KeychainError):$/;"	kind:class	line:462
 PickleSerializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class PickleSerializer(object):$/;"	kind:class	line:661
 Pool	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^from multiprocessing import Pool$/;"	kind:namespace	line:8
+ProgressBar	../CodeLab/utils/progress_bar.py	/^class ProgressBar():$/;"	kind:class	line:6
 RELEASES_BASE	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^RELEASES_BASE = 'https:\/\/api.github.com\/repos\/{0}\/releases'$/;"	kind:variable	line:37
 RESPONSES	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^RESPONSES = {$/;"	kind:variable	line:33
 Response	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^class Response(object):$/;"	kind:class	line:170
@@ -128,6 +129,7 @@ __init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __ini
 __init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __init__(self, title, subtitle='', arg=None, autocomplete=None,$/;"	kind:member	line:214
 __init__	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def __init__(self, sess, image_size=64, is_crop=False,$/;"	kind:member	line:30
 __init__	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^    def __init__(self, epsilon=1e-5, momentum = 0.9, name="batch_norm"):$/;"	kind:member	line:16
+__init__	../CodeLab/utils/progress_bar.py	/^	def __init__(self, totalsum, info="", auto_display=True):$/;"	kind:member	line:7
 __init__.py	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	1;"	kind:file	line:1
 __le__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __le__(self, other):$/;"	kind:member	line:173
 __licence__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__licence__ = 'MIT'$/;"	kind:variable	line:66
@@ -239,6 +241,7 @@ codecs	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import codecs$/;"	kin
 commands	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import commands$/;"	kind:namespace	line:6
 commands	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import commands$/;"	kind:namespace	line:13
 complete	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def complete(self, config):$/;"	kind:member	line:260
+complete	../CodeLab/utils/progress_bar.py	/^	def complete(self, num):$/;"	kind:member	line:14
 complete.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	1;"	kind:file	line:1
 config	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^config = tf.ConfigProto()$/;"	kind:variable	line:41
 confusion_matrix	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^from sklearn.metrics import confusion_matrix$/;"	kind:namespace	line:5
@@ -267,6 +270,7 @@ default	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete
 delete_password	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def delete_password(self, account, service=None):$/;"	kind:member	line:2637
 delete_paths	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def delete_paths(paths):$/;"	kind:function	line:1787
 discriminator	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def discriminator(self, image, reuse=False):$/;"	kind:member	line:419
+display_progress_bar	../CodeLab/utils/progress_bar.py	/^	def display_progress_bar(self):$/;"	kind:member	line:19
 division	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^from __future__ import division$/;"	kind:namespace	line:8
 division	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^from __future__ import division$/;"	kind:namespace	line:9
 do_help	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def do_help():$/;"	kind:function	line:2739
@@ -449,6 +453,7 @@ parser	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	/^parser = argparse.Argum
 parser	../CodeLab/fun/google_translate_popclip_core/translate.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:13
 parser	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:13
 passwd	../CodeLab/fun/wechat_bot/wechat_bot.py	/^passwd = '1245819728'$/;"	kind:variable	line:18
+pb	../CodeLab/utils/progress_bar.py	/^pb = ProgressBar(totalsum=100, info='progress')$/;"	kind:variable	line:27
 pg	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import pyautogui as pg$/;"	kind:namespace	line:7
 pickle	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^import pickle$/;"	kind:namespace	line:18
 pickle	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import pickle$/;"	kind:namespace	line:34
@@ -547,6 +552,7 @@ ss.py	../CodeLab/fun/alfred_kyoyue_core/ss.py	1;"	kind:file	line:1
 ssr.py	../CodeLab/fun/alfred_kyoyue_core/ssr.py	1;"	kind:file	line:1
 start_label_action	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def start_label_action(self):$/;"	kind:member	line:297
 start_update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def start_update(self):$/;"	kind:member	line:2516
+startjob	../CodeLab/utils/progress_bar.py	/^	def startjob(self):$/;"	kind:member	line:12
 store_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def store_data(self, name, data, serializer=None):$/;"	kind:member	line:1767
 store_frames_to_tmp	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def store_frames_to_tmp(self, select_cur, vid_cur):$/;"	kind:member	line:279
 stored_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def stored_data(self, name):$/;"	kind:member	line:1720
@@ -569,6 +575,7 @@ sys	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    import sys$/;"	ki
 sys	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import sys$/;"	kind:namespace	line:41
 sys	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^import sys$/;"	kind:namespace	line:31
 sys	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import sys$/;"	kind:namespace	line:4
+sys	../CodeLab/utils/progress_bar.py	/^import sys$/;"	kind:namespace	line:4
 tarfile	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import tarfile$/;"	kind:namespace	line:32
 target_chatgroup	../CodeLab/fun/wechat_bot/wechat_bot.py	/^target_chatgroup = f$/;"	kind:variable	line:249
 target_username	../CodeLab/fun/wechat_bot/wechat_bot.py	/^			target_username = itchat.search_friends(nickName='NEAL')[0].UserName$/;"	kind:variable	line:177
@@ -583,6 +590,7 @@ tf	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.p
 time	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import time$/;"	kind:namespace	line:42
 time	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import time$/;"	kind:namespace	line:11
 time	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import time$/;"	kind:namespace	line:10
+time	../CodeLab/utils/progress_bar.py	/^import time$/;"	kind:namespace	line:3
 tk	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import tkinter as tk$/;"	kind:namespace	line:9
 tkimg	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^tkimg = None  # the tkimg being showing, use in this way for a bug of ImageTk module$/;"	kind:variable	line:13
 to_json	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^from utils import pp, visualize, to_json$/;"	kind:namespace	line:14
