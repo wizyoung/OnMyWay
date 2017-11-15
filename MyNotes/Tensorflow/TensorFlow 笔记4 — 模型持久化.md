@@ -472,7 +472,7 @@ MetaGraphDef 中包含以下几部分:
 
 MetaInfoDef Protobuf 的定义:
 
-```json
+```
 message MetaInfoDef{
   string meta_graph_version = 1;  // 计算图版本号
   Oplist stripped_op_list = 2;  // 图中用到的所有运算方法的信息
@@ -483,7 +483,7 @@ message MetaInfoDef{
 
  MetaInfoDef 中 stripped_op_list 记录了图中用到的所有运算(op)方法的信息，如果某一个运算出现了多次，在 stripped_op_list 中只记录一次。stripped_op_list 里面的元素是 OpDef，每一个 OpDef 记录了 op 的详细信息。如 Add 这个 op：
 
-``` json
+``` 
 op {
       name: "Add"  // 名称
       input_arg {  // 输入
@@ -519,7 +519,7 @@ GraphDef 主要记录的是运算图中的节点(node)信息。因为 MetaInfoDe
 
 GraphDef 里面的元素主要是 NodeDef，GraphDef 的定义为:
 
-```json
+```
 message GraphDef{
   repeated NodeDef node = 1;  
   VersionDef versions = 2;  
@@ -535,7 +535,7 @@ message NodeDef{
 
 比如 v1 这个 Variable node:
 
-```json
+```
 node {
     name: "v1"
     op: "VariableV2"
@@ -586,7 +586,7 @@ node {
 
 SaverDef 中主要记录了模型持久化时需要的一些参数，如保存操作和加载操作在 GraphDef 中的名称，保存的频率，清理历史记录等。因为  SaverDef 比较简单，我们直接看这部分文件的信息：
 
-```json
+```
 saver_def {
   filename_tensor_name: "save/Const:0"
   save_tensor_name: "save/control_dependency:0"
@@ -603,7 +603,7 @@ save 保存这个操作在 GraphDef 中对应的 node 的 name 就是 save/contr
 
 TensorFlow 中的图中可以维护不同集合(collections)，其底层实现就是通过 CollectionDef 这个属性：
 
-```json
+```
 collection_def {
   key: "trainable_variables"
   value {
