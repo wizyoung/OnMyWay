@@ -1,0 +1,651 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASCII_REPLACEMENTS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ASCII_REPLACEMENTS = {$/;"	kind:variable	line:100
+AcquisitionError	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class AcquisitionError(Exception):$/;"	kind:class	line:449
+BOUNDARY_CHARS	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^BOUNDARY_CHARS = string.digits + string.ascii_letters$/;"	kind:variable	line:30
+CPickleSerializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class CPickleSerializer(object):$/;"	kind:class	line:622
+CaseInsensitiveDictionary	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^class CaseInsensitiveDictionary(dict):$/;"	kind:class	line:105
+DCGAN	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^from model import DCGAN$/;"	kind:namespace	line:11
+DCGAN	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^class DCGAN(object):$/;"	kind:class	line:29
+DCGAN	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^from model import DCGAN$/;"	kind:namespace	line:13
+DEFAULT_UPDATE_FREQUENCY	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^DEFAULT_UPDATE_FREQUENCY = 1$/;"	kind:variable	line:442
+DUMB_PUNCTUATION	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^DUMB_PUNCTUATION = {$/;"	kind:variable	line:392
+ET	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.ElementTree as ET$/;"	kind:namespace	line:48
+ET	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.cElementTree as ET$/;"	kind:namespace	line:46
+FLAGS	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^FLAGS = flags.FLAGS$/;"	kind:variable	line:28
+ICON_ACCOUNT	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_ACCOUNT = os.path.join(ICON_ROOT, 'Accounts.icns')$/;"	kind:variable	line:70
+ICON_BURN	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_BURN = os.path.join(ICON_ROOT, 'BurningIcon.icns')$/;"	kind:variable	line:71
+ICON_CLOCK	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_CLOCK = os.path.join(ICON_ROOT, 'Clock.icns')$/;"	kind:variable	line:72
+ICON_COLOR	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_COLOR = os.path.join(ICON_ROOT, 'ProfileBackgroundColor.icns')$/;"	kind:variable	line:73
+ICON_COLOUR	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_COLOUR = ICON_COLOR  # Queen's English, if you please$/;"	kind:variable	line:74
+ICON_EJECT	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_EJECT = os.path.join(ICON_ROOT, 'EjectMediaIcon.icns')$/;"	kind:variable	line:75
+ICON_ERROR	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_ERROR = os.path.join(ICON_ROOT, 'AlertStopIcon.icns')$/;"	kind:variable	line:77
+ICON_FAVORITE	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_FAVORITE = os.path.join(ICON_ROOT, 'ToolbarFavoritesIcon.icns')$/;"	kind:variable	line:78
+ICON_FAVOURITE	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_FAVOURITE = ICON_FAVORITE$/;"	kind:variable	line:79
+ICON_GROUP	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_GROUP = os.path.join(ICON_ROOT, 'GroupIcon.icns')$/;"	kind:variable	line:80
+ICON_HELP	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_HELP = os.path.join(ICON_ROOT, 'HelpIcon.icns')$/;"	kind:variable	line:81
+ICON_HOME	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_HOME = os.path.join(ICON_ROOT, 'HomeFolderIcon.icns')$/;"	kind:variable	line:82
+ICON_INFO	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_INFO = os.path.join(ICON_ROOT, 'ToolbarInfo.icns')$/;"	kind:variable	line:83
+ICON_NETWORK	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_NETWORK = os.path.join(ICON_ROOT, 'GenericNetworkIcon.icns')$/;"	kind:variable	line:84
+ICON_NOTE	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_NOTE = os.path.join(ICON_ROOT, 'AlertNoteIcon.icns')$/;"	kind:variable	line:85
+ICON_ROOT	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_ROOT = '\/System\/Library\/CoreServices\/CoreTypes.bundle\/Contents\/Resources'$/;"	kind:variable	line:68
+ICON_SETTINGS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_SETTINGS = os.path.join(ICON_ROOT, 'ToolbarAdvanced.icns')$/;"	kind:variable	line:86
+ICON_SWIRL	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_SWIRL = os.path.join(ICON_ROOT, 'ErasingIcon.icns')$/;"	kind:variable	line:87
+ICON_SWITCH	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_SWITCH = os.path.join(ICON_ROOT, 'General.icns')$/;"	kind:variable	line:88
+ICON_SYNC	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_SYNC = os.path.join(ICON_ROOT, 'Sync.icns')$/;"	kind:variable	line:89
+ICON_TRASH	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_TRASH = os.path.join(ICON_ROOT, 'TrashIcon.icns')$/;"	kind:variable	line:90
+ICON_USER	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_USER = os.path.join(ICON_ROOT, 'UserIcon.icns')$/;"	kind:variable	line:91
+ICON_WARNING	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_WARNING = os.path.join(ICON_ROOT, 'AlertCautionIcon.icns')$/;"	kind:variable	line:92
+ICON_WEB	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^ICON_WEB = os.path.join(ICON_ROOT, 'BookmarkIcon.icns')$/;"	kind:variable	line:93
+INITIALS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^INITIALS = string.ascii_uppercase + string.digits$/;"	kind:variable	line:410
+Image	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^from PIL import Image, ImageTk$/;"	kind:namespace	line:11
+Image	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^from PIL import Image$/;"	kind:namespace	line:3
+Image	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^from PIL import Image$/;"	kind:namespace	line:3
+ImageTk	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^from PIL import Image, ImageTk$/;"	kind:namespace	line:11
+Item	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class Item(object):$/;"	kind:class	line:706
+Item3	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^class Item3(object):$/;"	kind:class	line:204
+JSONSerializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class JSONSerializer(object):$/;"	kind:class	line:582
+KeychainError	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow import PasswordNotFound, KeychainError$/;"	kind:namespace	line:20
+KeychainError	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class KeychainError(Exception):$/;"	kind:class	line:453
+Lock	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^from threading import Thread, Lock$/;"	kind:namespace	line:7
+LockFile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class LockFile(object):$/;"	kind:class	line:799
+MATCH_ALL	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_ALL = 127$/;"	kind:variable	line:434
+MATCH_ALLCHARS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_ALLCHARS = 64$/;"	kind:variable	line:432
+MATCH_ATOM	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_ATOM = 4$/;"	kind:variable	line:421
+MATCH_CAPITALS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_CAPITALS = 2$/;"	kind:variable	line:419
+MATCH_INITIALS	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_INITIALS = 24$/;"	kind:variable	line:428
+MATCH_INITIALS_CONTAIN	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_INITIALS_CONTAIN = 16$/;"	kind:variable	line:425
+MATCH_INITIALS_STARTSWITH	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_INITIALS_STARTSWITH = 8$/;"	kind:variable	line:423
+MATCH_STARTSWITH	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_STARTSWITH = 1$/;"	kind:variable	line:417
+MATCH_SUBSTRING	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^MATCH_SUBSTRING = 32$/;"	kind:variable	line:430
+Modifier	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^class Modifier(object):$/;"	kind:class	line:109
+NSImage	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^        from AppKit import NSWorkspace, NSImage$/;"	kind:namespace	line:136
+NSWorkspace	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^        from AppKit import NSWorkspace, NSImage$/;"	kind:namespace	line:136
+NoRedirectHandler	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^class NoRedirectHandler(urllib2.HTTPRedirectHandler):$/;"	kind:class	line:97
+PasswordExists	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class PasswordExists(KeychainError):$/;"	kind:class	line:470
+PasswordNotFound	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow import PasswordNotFound, KeychainError$/;"	kind:namespace	line:20
+PasswordNotFound	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class PasswordNotFound(KeychainError):$/;"	kind:class	line:462
+PickleSerializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class PickleSerializer(object):$/;"	kind:class	line:661
+Pool	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^from multiprocessing import Pool$/;"	kind:namespace	line:8
+RELEASES_BASE	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^RELEASES_BASE = 'https:\/\/api.github.com\/repos\/{0}\/releases'$/;"	kind:variable	line:37
+RESPONSES	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^RESPONSES = {$/;"	kind:variable	line:33
+Response	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^class Response(object):$/;"	kind:class	line:170
+SOUNDS	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^SOUNDS = ($/;"	kind:variable	line:44
+SerializerManager	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class SerializerManager(object):$/;"	kind:class	line:503
+Settings	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class Settings(dict):$/;"	kind:class	line:980
+Thread	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^from threading import Thread, Lock$/;"	kind:namespace	line:7
+Translator	../CodeLab/fun/google_translate_popclip_core/translate.py	/^from googletrans import Translator$/;"	kind:namespace	line:8
+UNSET	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^UNSET = object()$/;"	kind:variable	line:53
+USER_AGENT	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^USER_AGENT = u'Alfred-Workflow\/1.19 (+http:\/\/www.deanishe.net\/alfred-workflow)'$/;"	kind:variable	line:27
+Variables	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
+Variables	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^class Variables(dict):$/;"	kind:class	line:36
+Version	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^class Version(object):$/;"	kind:class	line:51
+Version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^                from update import Version$/;"	kind:namespace	line:1346
+Version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^                from update import Version$/;"	kind:namespace	line:2388
+Version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^            from update import Version$/;"	kind:namespace	line:2418
+Version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        from update import Version$/;"	kind:namespace	line:1165
+VideoLabelTool	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^class VideoLabelTool(object):$/;"	kind:class	line:15
+Workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow import Workflow, manager$/;"	kind:namespace	line:16
+Workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^from workflow import Workflow$/;"	kind:namespace	line:20
+Workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class Workflow(object):$/;"	kind:class	line:1065
+Workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^from .workflow import Workflow$/;"	kind:namespace	line:33
+Workflow3	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^from workflow import Workflow3$/;"	kind:namespace	line:4
+Workflow3	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow3 import Variables, Workflow3$/;"	kind:namespace	line:17
+Workflow3	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^class Workflow3(Workflow):$/;"	kind:class	line:379
+__all__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__all__ = [$/;"	kind:variable	line:69
+__all__	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^__all__ = ['is_running', 'run_in_background']$/;"	kind:variable	line:22
+__author__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__author__ = 'Dean Jackson'$/;"	kind:variable	line:65
+__call__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __call__(self, *args, **kwargs):$/;"	kind:member	line:954
+__call__	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^    def __call__(self, x, train):$/;"	kind:member	line:23
+__contains__	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def __contains__(self, key):$/;"	kind:member	line:127
+__copyright__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__copyright__ = 'Copyright 2014 Dean Jackson'$/;"	kind:variable	line:67
+__del__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __del__(self):$/;"	kind:member	line:888
+__delitem__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __delitem__(self, key):$/;"	kind:member	line:1048
+__enter__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __enter__(self):$/;"	kind:member	line:879
+__eq__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __eq__(self, other):$/;"	kind:member	line:157
+__exit__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __exit__(self, typ, value, traceback):$/;"	kind:member	line:884
+__ge__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __ge__(self, other):$/;"	kind:member	line:179
+__get__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __get__(self, obj=None, klass=None):$/;"	kind:member	line:974
+__getitem__	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def __getitem__(self, key):$/;"	kind:member	line:130
+__gt__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __gt__(self, other):$/;"	kind:member	line:167
+__init__	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def __init__(self, window):$/;"	kind:member	line:17
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __init__(self, vstr):$/;"	kind:member	line:77
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def __init__(self, initval=None):$/;"	kind:member	line:117
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def __init__(self, request, stream=False):$/;"	kind:member	line:189
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self):$/;"	kind:member	line:520
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self, default_settings=None, update_settings=None,$/;"	kind:member	line:1106
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self, filepath, defaults=None):$/;"	kind:member	line:998
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self, func, class_name=''):$/;"	kind:member	line:945
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self, protected_path, timeout=0, delay=0.05):$/;"	kind:member	line:802
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __init__(self, title, subtitle='', modifier_subtitles=None,$/;"	kind:member	line:717
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __init__(self, **kwargs):$/;"	kind:member	line:389
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __init__(self, arg=None, **variables):$/;"	kind:member	line:56
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __init__(self, key, subtitle=None, arg=None, valid=None):$/;"	kind:member	line:128
+__init__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __init__(self, title, subtitle='', arg=None, autocomplete=None,$/;"	kind:member	line:214
+__init__	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def __init__(self, sess, image_size=64, is_crop=False,$/;"	kind:member	line:30
+__init__	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^    def __init__(self, epsilon=1e-5, momentum = 0.9, name="batch_norm"):$/;"	kind:member	line:16
+__init__.py	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	1;"	kind:file	line:1
+__le__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __le__(self, other):$/;"	kind:member	line:173
+__licence__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__licence__ = 'MIT'$/;"	kind:variable	line:66
+__lt__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __lt__(self, other):$/;"	kind:member	line:139
+__ne__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __ne__(self, other):$/;"	kind:member	line:163
+__repr__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __repr__(self):$/;"	kind:member	line:192
+__setitem__	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:133
+__setitem__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:1042
+__str__	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def __str__(self):$/;"	kind:member	line:183
+__str__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __str__(self):$/;"	kind:member	line:100
+__title__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__title__ = 'Alfred-Workflow'$/;"	kind:variable	line:63
+__unicode__	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def __unicode__(self):$/;"	kind:member	line:86
+__version__	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^__version__ = open(os.path.join(os.path.dirname(__file__), 'version')).read()$/;"	kind:variable	line:64
+_arg_cache	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def _arg_cache(name):$/;"	kind:function	line:34
+_background	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def _background(stdin='\/dev\/null', stdout='\/dev\/null',$/;"	kind:function	line:99
+_call_security	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _call_security(self, action, service, account, *args):$/;"	kind:member	line:2957
+_create	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _create(self, dirpath):$/;"	kind:member	line:2944
+_default_cachedir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _default_cachedir(self):$/;"	kind:member	line:1415
+_default_cachedir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _default_cachedir(self):$/;"	kind:member	line:400
+_default_datadir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _default_datadir(self):$/;"	kind:member	line:1445
+_default_datadir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _default_datadir(self):$/;"	kind:member	line:409
+_delete_directory_contents	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _delete_directory_contents(self, dirpath, filter_func):$/;"	kind:member	line:2917
+_filter_item	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _filter_item(self, value, query, match_on, fold_diacritics):$/;"	kind:member	line:2090
+_fork_and_exit_parent	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^    def _fork_and_exit_parent(errmsg):$/;"	kind:function	line:111
+_get_encoding	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def _get_encoding(self):$/;"	kind:member	line:405
+_icon	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _icon(self):$/;"	kind:member	line:333
+_is_session_file	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^        def _is_session_file(filename):$/;"	kind:function	line:558
+_load	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _load(self):$/;"	kind:member	line:1011
+_load_info_plist	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _load_info_plist(self):$/;"	kind:member	line:2938
+_log	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^_log = None$/;"	kind:variable	line:40
+_mk_session_name	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _mk_session_name(self, name):$/;"	kind:member	line:499
+_modifiers	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _modifiers(self):$/;"	kind:member	line:363
+_parse	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def _parse(self, vstr):$/;"	kind:member	line:91
+_parse_dotted_string	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def _parse_dotted_string(self, s):$/;"	kind:member	line:124
+_pid_file	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def _pid_file(name):$/;"	kind:function	line:46
+_process_exists	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def _process_exists(pid):$/;"	kind:function	line:58
+_process_exists	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        from background import _process_exists$/;"	kind:namespace	line:866
+_register_default_magic	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _register_default_magic(self):$/;"	kind:member	line:2661
+_search_for_query	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _search_for_query(self, query):$/;"	kind:member	line:2182
+_store	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def _store():$/;"	kind:function	line:1822
+_text	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def _text(self):$/;"	kind:member	line:348
+_validate_lockfile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def _validate_lockfile(self):$/;"	kind:member	line:848
+_validate_release	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def _validate_release(release):$/;"	kind:function	line:236
+_wf	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^_wf = None$/;"	kind:variable	line:24
+_wf	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^_wf = None$/;"	kind:variable	line:39
+_wf	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^_wf = None$/;"	kind:variable	line:40
+absolute_import	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^from __future__ import print_function, unicode_literals, absolute_import$/;"	kind:namespace	line:27
+acquire	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def acquire(self, blocking=True):$/;"	kind:member	line:815
+add_item	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def add_item(self, title, subtitle='', modifier_subtitles=None, arg=None,$/;"	kind:member	line:2273
+add_item	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def add_item(self, title, subtitle='', arg=None, autocomplete=None,$/;"	kind:member	line:477
+add_modifier	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def add_modifier(self, key, subtitle=None, arg=None, valid=None):$/;"	kind:member	line:261
+alfred_env	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def alfred_env(self):$/;"	kind:member	line:1169
+alfred_version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def alfred_version(self):$/;"	kind:member	line:1163
+argparse	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import argparse$/;"	kind:namespace	line:5
+argparse	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^import argparse$/;"	kind:namespace	line:2
+argparse	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^import argparse$/;"	kind:namespace	line:2
+argparse	../CodeLab/fun/alfred_kyoyue_core/surge_conf.py	/^import argparse$/;"	kind:namespace	line:2
+argparse	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	/^import argparse$/;"	kind:namespace	line:2
+argparse	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^    import argparse$/;"	kind:namespace	line:328
+argparse	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import argparse$/;"	kind:namespace	line:2
+argparse	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^import argparse$/;"	kind:namespace	line:7
+args	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^args = parser.parse_args()$/;"	kind:variable	line:10
+args	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^args = parser.parse_args()$/;"	kind:variable	line:10
+args	../CodeLab/fun/alfred_kyoyue_core/surge_conf.py	/^args = parser.parse_args()$/;"	kind:variable	line:6
+args	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	/^args = parser.parse_args()$/;"	kind:variable	line:6
+args	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def args(self):$/;"	kind:member	line:1356
+args	../CodeLab/fun/google_translate_popclip_core/translate.py	/^args = parser.parse_args()$/;"	kind:variable	line:19
+args	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^args = parser.parse_args()$/;"	kind:variable	line:37
+argv	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    argv = sys.argv[:]$/;"	kind:variable	line:411
+atexit	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import atexit$/;"	kind:namespace	line:24
+atomic_writer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^def atomic_writer(file_path, mode):$/;"	kind:function	line:895
+auto_reply	../CodeLab/fun/wechat_bot/wechat_bot.py	/^auto_reply = 0$/;"	kind:variable	line:16
+auto_reply_word	../CodeLab/fun/wechat_bot/wechat_bot.py	/^auto_reply_word = u'您好，我现在有事不在，稍后回来恢复您'$/;"	kind:variable	line:17
+background.py	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	1;"	kind:file	line:1
+base64	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import base64$/;"	kind:namespace	line:9
+batch_norm	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^class batch_norm(object):$/;"	kind:class	line:14
+batch_size	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^                  batch_size=64,$/;"	kind:variable	line:45
+batt_remain	../CodeLab/fun/wechat_bot/wechat_bot.py	/^			batt_remain = commands.getoutput('pmset -g batt | egrep "([0-9]+\\%).*" -o --colour=auto | cut -f1 -d";"')$/;"	kind:variable	line:168
+binary_cross_entropy	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def binary_cross_entropy(preds, targets, name=None):$/;"	kind:function	line:37
+binascii	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import binascii$/;"	kind:namespace	line:25
+build_api_url	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def build_api_url(slug):$/;"	kind:function	line:223
+build_model	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def build_model(self):$/;"	kind:member	line:88
+bundleid	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def bundleid(self):$/;"	kind:member	line:1259
+cPickle	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import cPickle$/;"	kind:namespace	line:27
+cache_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cache_data(self, name, data):$/;"	kind:member	line:1870
+cache_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def cache_data(self, name, data, session=False):$/;"	kind:member	line:503
+cache_serializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cache_serializer(self):$/;"	kind:member	line:1634
+cache_serializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cache_serializer(self, serializer_name):$/;"	kind:member	line:1651
+cached_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cached_data(self, name, data_func=None, max_age=60):$/;"	kind:member	line:1834
+cached_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def cached_data(self, name, data_func=None, max_age=60, session=False):$/;"	kind:member	line:527
+cached_data_age	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cached_data_age(self, name):$/;"	kind:member	line:1913
+cached_data_fresh	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cached_data_fresh(self, name, max_age):$/;"	kind:member	line:1896
+cachedir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cachedir(self):$/;"	kind:member	line:1392
+cachefile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def cachefile(self, filename):$/;"	kind:member	line:1494
+callback	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def callback(func, msg):$/;"	kind:function	line:2665
+cancelbox	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def cancelbox(self, event):$/;"	kind:member	line:196
+center_crop	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def center_crop(x, crop_h, crop_w=None, resize_w=64):$/;"	kind:function	line:49
+check_update	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def check_update(github_slug, current_version, prereleases=False):$/;"	kind:function	line:336
+check_update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def check_update(self, force=False):$/;"	kind:member	line:2467
+choices	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^                    choices=['adam', 'hmc'],$/;"	kind:variable	line:15
+choices	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^                    choices=['random', 'center', 'left', 'full', 'grid', 'lowres'],$/;"	kind:variable	line:32
+clear_cache	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def clear_cache(self, filter_func=lambda f: True):$/;"	kind:member	line:2771
+clear_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def clear_data(self, filter_func=lambda f: True):$/;"	kind:member	line:2783
+clear_session_cache	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def clear_session_cache(self):$/;"	kind:member	line:553
+clear_settings	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def clear_settings(self):$/;"	kind:member	line:2795
+cm	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^cm = cm.astype(np.float) \/ cm.sum(axis=1)[:, np.newaxis]$/;"	kind:variable	line:148
+cm	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^cm = confusion_matrix(y_true, y_pred)$/;"	kind:variable	line:147
+codecs	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import codecs$/;"	kind:namespace	line:12
+commands	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import commands$/;"	kind:namespace	line:6
+commands	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import commands$/;"	kind:namespace	line:13
+complete	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def complete(self, config):$/;"	kind:member	line:260
+complete.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	1;"	kind:file	line:1
+config	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^config = tf.ConfigProto()$/;"	kind:variable	line:41
+confusion_matrix	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^from sklearn.metrics import confusion_matrix$/;"	kind:namespace	line:5
+content	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def content(self):$/;"	kind:member	line:284
+contextmanager	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^from contextlib import contextmanager$/;"	kind:namespace	line:26
+conv2d	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def conv2d(input_, output_dim,$/;"	kind:function	line:62
+conv2d_transpose	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def conv2d_transpose(input_, output_shape,$/;"	kind:function	line:76
+conv_cond_concat	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def conv_cond_concat(x, y):$/;"	kind:function	line:56
+convert_image	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def convert_image(inpath, outpath, size):$/;"	kind:function	line:212
+cv2	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import cv2$/;"	kind:namespace	line:6
+cv2	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import cv2$/;"	kind:namespace	line:8
+cv2	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import cv2$/;"	kind:namespace	line:10
+data_serializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def data_serializer(self):$/;"	kind:member	line:1678
+data_serializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def data_serializer(self, serializer_name):$/;"	kind:member	line:1695
+datadir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def datadir(self):$/;"	kind:member	line:1424
+datafile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def datafile(self, filename):$/;"	kind:member	line:1508
+dataset_files	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^def dataset_files(root):$/;"	kind:function	line:22
+dcgan	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^    dcgan = DCGAN(sess, image_size=args.imgSize,$/;"	kind:variable	line:44
+dcgan	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^    dcgan = DCGAN(sess, image_size=FLAGS.image_size, batch_size=FLAGS.batch_size,$/;"	kind:variable	line:40
+debugging	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def debugging(self):$/;"	kind:member	line:1275
+decode	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def decode(self, text, encoding=None, normalization=None):$/;"	kind:member	line:2843
+decode_stream	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^        def decode_stream(iterator, r):$/;"	kind:function	line:342
+deepcopy	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^from copy import deepcopy$/;"	kind:namespace	line:28
+default	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^                    default='adam')$/;"	kind:variable	line:16
+default	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^                    default='center')$/;"	kind:variable	line:33
+delete_password	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def delete_password(self, account, service=None):$/;"	kind:member	line:2637
+delete_paths	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def delete_paths(paths):$/;"	kind:function	line:1787
+discriminator	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def discriminator(self, image, reuse=False):$/;"	kind:member	line:419
+division	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^from __future__ import division$/;"	kind:namespace	line:8
+division	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^from __future__ import division$/;"	kind:namespace	line:9
+do_help	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def do_help():$/;"	kind:function	line:2739
+do_update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def do_update():$/;"	kind:function	line:2726
+download_workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def download_workflow(url):$/;"	kind:function	line:197
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'de'$/;"	kind:variable	line:80
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'en'$/;"	kind:variable	line:78
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'es'$/;"	kind:variable	line:92
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'fr'$/;"	kind:variable	line:86
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'it'$/;"	kind:variable	line:94
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'ja'$/;"	kind:variable	line:84
+dst	../CodeLab/fun/google_translate_popclip_core/translate.py	/^    dst = 'ko'$/;"	kind:variable	line:82
+dumbify_punctuation	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def dumbify_punctuation(self, text):$/;"	kind:member	line:2896
+dump	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:608
+dump	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:647
+dump	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def dump(cls, obj, file_obj):$/;"	kind:member	line:685
+elem	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def elem(self):$/;"	kind:member	line:737
+encode_multipart_formdata	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^def encode_multipart_formdata(fields, files):$/;"	kind:function	line:593
+encoding	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def encoding(self):$/;"	kind:member	line:272
+errno	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import errno$/;"	kind:namespace	line:29
+error_correction	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^    error_correction=qrcode.constants.ERROR_CORRECT_Q,$/;"	kind:variable	line:15
+error_correction	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^    error_correction=qrcode.constants.ERROR_CORRECT_Q,$/;"	kind:variable	line:14
+erroroutput	../CodeLab/fun/google_translate_popclip_core/translate.py	/^def erroroutput():$/;"	kind:function	line:48
+etree	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.ElementTree as ET$/;"	kind:namespace	line:48
+etree	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.cElementTree as ET$/;"	kind:namespace	line:46
+f	../CodeLab/fun/wechat_bot/wechat_bot.py	/^f = open('target_chatgroup.txt', 'r').read().decode('utf-8')$/;"	kind:variable	line:248
+filter	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def filter(self, query, items, key=lambda x: x, ascending=False,$/;"	kind:member	line:1929
+first_run	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def first_run(self):$/;"	kind:member	line:2358
+flags	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^flags = tf.app.flags$/;"	kind:variable	line:18
+fold_default	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def fold_default():$/;"	kind:function	line:2700
+fold_off	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def fold_off():$/;"	kind:function	line:2696
+fold_on	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def fold_on():$/;"	kind:function	line:2692
+fold_to_ascii	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def fold_to_ascii(self, text):$/;"	kind:member	line:2877
+generate	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^        def generate():$/;"	kind:function	line:355
+generator	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def generator(self, z):$/;"	kind:member	line:433
+get	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def get(self, key, default=None):$/;"	kind:member	line:136
+get	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^def get(url, params=None, headers=None, cookies=None, auth=None,$/;"	kind:function	line:570
+get_content_type	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def get_content_type(filename):$/;"	kind:function	line:615
+get_image	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def get_image(image_path, image_size, is_crop=True):$/;"	kind:function	line:23
+get_password	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def get_password(self, account, service=None):$/;"	kind:member	line:2598
+get_stddev	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^get_stddev = lambda x, k_h, k_w: 1\/math.sqrt(k_w*k_h*x.get_shape()[-1])$/;"	kind:variable	line:21
+get_valid_releases	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def get_valid_releases(github_slug, prereleases=False):$/;"	kind:function	line:290
+getvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def getvar(self, name, default=None):$/;"	kind:member	line:157
+getvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def getvar(self, name, default=None):$/;"	kind:member	line:249
+getvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def getvar(self, name, default=None):$/;"	kind:member	line:465
+glob	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import glob$/;"	kind:namespace	line:3
+glob	../CodeLab/fun/wechat_bot/wechat_bot.py	/^from glob import glob$/;"	kind:namespace	line:9
+glob	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^from glob import glob$/;"	kind:namespace	line:13
+gmtime	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^from time import gmtime, strftime$/;"	kind:namespace	line:16
+gotoImg	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def gotoImg(self):$/;"	kind:member	line:161
+group_text_reply	../CodeLab/fun/wechat_bot/wechat_bot.py	/^def group_text_reply(msg):$/;"	kind:function	line:185
+hahaha	../CodeLab/fun/google_translate_popclip_core/translate.py	/^def hahaha():$/;"	kind:function	line:55
+handlers	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import logging.handlers$/;"	kind:namespace	line:32
+hongbao_target	../CodeLab/fun/wechat_bot/wechat_bot.py	/^hongbao_target = itchat.search_chatrooms(name=u'red packet')[0]$/;"	kind:variable	line:232
+huyun	../CodeLab/fun/wechat_bot/wechat_bot.py	/^huyun = itchat.search_friends(name=u'胡昀')[0]$/;"	kind:variable	line:231
+iTunes_control	../CodeLab/fun/wechat_bot/wechat_bot.py	/^iTunes_control = {u'播放': itunes_play, u'暂停': itunes_play, $/;"	kind:variable	line:61
+img	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^img = qr.make_image().save('ss.png')$/;"	kind:variable	line:20
+img	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^img = qr.make_image().save('ssr.png')$/;"	kind:variable	line:19
+imread	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def imread(path):$/;"	kind:function	line:29
+imsave	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def imsave(images, size, path):$/;"	kind:function	line:45
+info	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def info(self):$/;"	kind:member	line:1252
+install_notifier	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def install_notifier():$/;"	kind:function	line:104
+install_update	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def install_update():$/;"	kind:function	line:380
+inverse_transform	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def inverse_transform(images):$/;"	kind:function	line:66
+isChinese	../CodeLab/fun/google_translate_popclip_core/translate.py	/^def isChinese(query):$/;"	kind:function	line:62
+is_running	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def is_running(name):$/;"	kind:function	line:74
+isascii	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^def isascii(text):$/;"	kind:function	line:483
+itchat	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import itchat$/;"	kind:namespace	line:5
+item_class	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    item_class = Item$/;"	kind:variable	line:1104
+item_class	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    item_class = Item3$/;"	kind:variable	line:387
+items	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def items(self):$/;"	kind:member	line:148
+iter_content	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def iter_content(self, chunk_size=4096, decode_unicode=False):$/;"	kind:member	line:321
+iteritems	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def iteritems(self):$/;"	kind:member	line:157
+iterkeys	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def iterkeys(self):$/;"	kind:member	line:161
+itertools	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^import itertools$/;"	kind:namespace	line:1
+itertools	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import itertools$/;"	kind:namespace	line:12
+itervalues	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def itervalues(self):$/;"	kind:member	line:165
+json	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def json(self):$/;"	kind:member	line:262
+json	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import json$/;"	kind:namespace	line:13
+json	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import json$/;"	kind:namespace	line:30
+json	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^import json$/;"	kind:namespace	line:29
+json	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import json$/;"	kind:namespace	line:12
+json	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import json$/;"	kind:namespace	line:11
+keys	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def keys(self):$/;"	kind:member	line:151
+kyoyue.py	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	1;"	kind:file	line:1
+lang	../CodeLab/fun/google_translate_popclip_core/translate.py	/^lang = args.lang$/;"	kind:variable	line:22
+last_version_run	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def last_version_run(self):$/;"	kind:member	line:2375
+linear	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def linear(input_, output_size, scope=None, stddev=0.02, bias_start=0.0, with_w=False):$/;"	kind:function	line:108
+list_magic	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def list_magic():$/;"	kind:function	line:2752
+listdir	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def listdir(self, dir):$/;"	kind:member	line:232
+load	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line:594
+load	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line:633
+load	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def load(cls, file_obj):$/;"	kind:member	line:671
+load	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def load(self, checkpoint_dir):$/;"	kind:member	line:477
+loadDir	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def loadDir(self):$/;"	kind:member	line:141
+location	../CodeLab/fun/google_translate_popclip_core/translate.py	/^location = args.location$/;"	kind:variable	line:24
+locked	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def locked(self):$/;"	kind:member	line:811
+log	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def log():$/;"	kind:function	line:74
+logfile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def logfile(self):$/;"	kind:member	line:1534
+logger	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def logger(self):$/;"	kind:member	line:1544
+logger	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def logger(self, logger):$/;"	kind:member	line:1589
+logging	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import logging$/;"	kind:namespace	line:31
+logging	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import logging.handlers$/;"	kind:namespace	line:32
+login	../CodeLab/fun/wechat_bot/wechat_bot.py	/^def login():$/;"	kind:function	line:20
+lrelu	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^def lrelu(x, leak=0.2, name="lrelu"):$/;"	kind:function	line:102
+main	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^def main(wf):$/;"	kind:function	line:117
+main	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def main(wf):  # pragma: no cover$/;"	kind:function	line:191
+make_dir	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^        def make_dir(name):$/;"	kind:function	line:261
+make_frame	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^  def make_frame(t):$/;"	kind:function	line:136
+make_gif	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def make_gif(images, fname, duration=2, true_image=False):$/;"	kind:function	line:133
+manager	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^from .workflow import Workflow, manager$/;"	kind:namespace	line:16
+manager	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^manager = SerializerManager()$/;"	kind:variable	line:700
+match_version	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    match_version = re.compile(r'([0-9\\.]+)(.+)?').match$/;"	kind:variable	line:75
+math	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import math$/;"	kind:namespace	line:11
+math	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^import math$/;"	kind:namespace	line:6
+math	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import math$/;"	kind:namespace	line:10
+matplotlib	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+merge	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def merge(images, size):$/;"	kind:function	line:35
+merge_images	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def merge_images(images, size):$/;"	kind:function	line:32
+messagebox	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^from tkinter import messagebox$/;"	kind:namespace	line:10
+mimetypes	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import mimetypes$/;"	kind:namespace	line:14
+misc	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^import scipy.misc$/;"	kind:namespace	line:10
+misc	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import scipy.misc$/;"	kind:namespace	line:14
+model.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	1;"	kind:file	line:1
+motion	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^motion = ['SwipeR','SwipeL','SwipeD','SwipeU','SwipeV','SwipeX','Swipe+',$/;"	kind:variable	line:62
+mouseClick	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def mouseClick(self, event):$/;"	kind:member	line:165
+mouseMove	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def mouseMove(self, event):$/;"	kind:member	line:181
+moviepy	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^  import moviepy.editor as mpy$/;"	kind:namespace	line:134
+mpy	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^  import moviepy.editor as mpy$/;"	kind:namespace	line:134
+name	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^        self.select_cur = 0  # selected video class name$/;"	kind:class	line:123
+name	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^        self.select_vid_class_name = None  # selected video class name in listbox1$/;"	kind:class	line:129
+name	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def name(self):$/;"	kind:member	line:1290
+name_prefix	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^    def name_prefix(name):$/;"	kind:function	line:75
+nextImage	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def nextImage(self, event):$/;"	kind:member	line:202
+nextVideo	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def nextVideo(self):$/;"	kind:member	line:214
+normalize	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^    from unicodedata import normalize$/;"	kind:namespace	line:330
+notifier_icon_path	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def notifier_icon_path():$/;"	kind:function	line:95
+notifier_program	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def notifier_program():$/;"	kind:function	line:86
+notify	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def notify(title='', text='', sound=None):$/;"	kind:function	line:174
+notify.py	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	1;"	kind:file	line:1
+np	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^import numpy as np$/;"	kind:namespace	line:4
+np	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^import numpy as np$/;"	kind:namespace	line:11
+np	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import numpy as np$/;"	kind:namespace	line:15
+o	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^    o = p.parse_args()$/;"	kind:variable	line:348
+obj	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def obj(self):$/;"	kind:member	line:170
+obj	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def obj(self):$/;"	kind:member	line:283
+obj	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def obj(self):$/;"	kind:member	line:564
+obj	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def obj(self):$/;"	kind:member	line:69
+open_cachedir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_cachedir(self):$/;"	kind:member	line:2816
+open_datadir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_datadir(self):$/;"	kind:member	line:2820
+open_help	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_help(self):$/;"	kind:member	line:2833
+open_log	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_log(self):$/;"	kind:member	line:2812
+open_terminal	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_terminal(self):$/;"	kind:member	line:2828
+open_workflowdir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def open_workflowdir(self):$/;"	kind:member	line:2824
+ops	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^from tensorflow.python.framework import ops$/;"	kind:namespace	line:10
+ops.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	1;"	kind:file	line:1
+os	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import os$/;"	kind:namespace	line:4
+os	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^import os$/;"	kind:namespace	line:5
+os	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^import os$/;"	kind:namespace	line:5
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/__init__.py	/^import os$/;"	kind:namespace	line:13
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^import os$/;"	kind:namespace	line:16
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import os$/;"	kind:namespace	line:27
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import os$/;"	kind:namespace	line:26
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import os$/;"	kind:namespace	line:15
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import os$/;"	kind:namespace	line:33
+os	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^import os$/;"	kind:namespace	line:30
+os	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import os$/;"	kind:namespace	line:3
+os	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import os$/;"	kind:namespace	line:8
+os	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^import os$/;"	kind:namespace	line:8
+os	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import os$/;"	kind:namespace	line:9
+os	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^import os$/;"	kind:namespace	line:9
+p	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^    p = argparse.ArgumentParser()$/;"	kind:variable	line:337
+pa	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^def pa(username, password):$/;"	kind:function	line:33
+parser	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:8
+parser	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:8
+parser	../CodeLab/fun/alfred_kyoyue_core/surge_conf.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:4
+parser	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:4
+parser	../CodeLab/fun/google_translate_popclip_core/translate.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:13
+parser	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^parser = argparse.ArgumentParser()$/;"	kind:variable	line:13
+passwd	../CodeLab/fun/wechat_bot/wechat_bot.py	/^passwd = '1245819728'$/;"	kind:variable	line:18
+pg	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import pyautogui as pg$/;"	kind:namespace	line:7
+pickle	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^import pickle$/;"	kind:namespace	line:18
+pickle	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import pickle$/;"	kind:namespace	line:34
+ping_ip	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^def ping_ip(idx, ip):$/;"	kind:function	line:15
+plistlib	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import plistlib$/;"	kind:namespace	line:28
+plistlib	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import plistlib$/;"	kind:namespace	line:35
+plot_cm	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^def plot_cm(cm, classes,$/;"	kind:function	line:152
+plot_confusion_matrix.py	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	1;"	kind:file	line:1
+plt	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+png_to_icns	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def png_to_icns(png_path, icns_path):$/;"	kind:function	line:236
+post	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^def post(url, params=None, data=None, headers=None, cookies=None, files=None,$/;"	kind:function	line:582
+pp	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^from utils import pp, visualize, to_json$/;"	kind:namespace	line:14
+pp	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^pp = pprint.PrettyPrinter()$/;"	kind:variable	line:19
+pprint	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import pprint$/;"	kind:namespace	line:13
+prereleases	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    prereleases = '--prereleases' in argv$/;"	kind:variable	line:412
+prereleases	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def prereleases(self):$/;"	kind:member	line:2452
+prereleases_off	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def prereleases_off():$/;"	kind:function	line:2722
+prereleases_on	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def prereleases_on():$/;"	kind:function	line:2718
+prevImage	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def prevImage(self, event):$/;"	kind:member	line:208
+prevVideo	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def prevVideo(self):$/;"	kind:member	line:223
+print_function	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:13
+print_function	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:25
+print_function	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:24
+print_function	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:22
+print_function	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^from __future__ import print_function, unicode_literals, absolute_import$/;"	kind:namespace	line:27
+processVideo	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def processVideo(self):$/;"	kind:member	line:238
+progress_bar.py	../CodeLab/utils/progress_bar.py	1;"	kind:file	line:1
+qr	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^qr = qrcode.QRCode($/;"	kind:variable	line:13
+qr	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^qr = qrcode.QRCode($/;"	kind:variable	line:12
+qrcode	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^import qrcode$/;"	kind:namespace	line:4
+qrcode	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^import qrcode$/;"	kind:namespace	line:4
+query	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^query = args.query.split('bound')[0]$/;"	kind:variable	line:11
+query	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^query = args.query.split('bound')[1]$/;"	kind:variable	line:11
+query	../CodeLab/fun/alfred_kyoyue_core/surge_conf.py	/^query = args.query.split('bound')[0]$/;"	kind:variable	line:8
+query	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	/^query = args.query.split('bound')[1]$/;"	kind:variable	line:8
+query	../CodeLab/fun/google_translate_popclip_core/translate.py	/^query = query.decode('utf-8')$/;"	kind:variable	line:27
+query	../CodeLab/fun/google_translate_popclip_core/translate.py	/^query = unquote(args.query)$/;"	kind:variable	line:26
+raise_for_status	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def raise_for_status(self):$/;"	kind:member	line:396
+random	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import random$/;"	kind:namespace	line:16
+random	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import random$/;"	kind:namespace	line:12
+re	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import re$/;"	kind:namespace	line:2
+re	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^import re$/;"	kind:namespace	line:6
+re	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^import re$/;"	kind:namespace	line:6
+re	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import re$/;"	kind:namespace	line:28
+re	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import re$/;"	kind:namespace	line:17
+re	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import re$/;"	kind:namespace	line:36
+re	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import re$/;"	kind:namespace	line:6
+redirect_request	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def redirect_request(self, *args):$/;"	kind:member	line:100
+register	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def register(self, name, serializer):$/;"	kind:member	line:524
+release	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def release(self):$/;"	kind:member	line:870
+request	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^def request(method, url, params=None, data=None, headers=None, cookies=None,$/;"	kind:function	line:455
+requests	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import requests$/;"	kind:namespace	line:3
+requests	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import requests$/;"	kind:namespace	line:5
+rerun	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def rerun(self):$/;"	kind:member	line:416
+rerun	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def rerun(self, seconds):$/;"	kind:member	line:421
+reset	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def reset(self):$/;"	kind:member	line:2801
+retrieve_releases	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def retrieve_releases():$/;"	kind:function	line:311
+run	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def run(self, func, text_errors=False):$/;"	kind:member	line:2197
+run_in_background	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def run_in_background(name, args, **kwargs):$/;"	kind:function	line:144
+run_in_background	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^            from background import run_in_background$/;"	kind:namespace	line:2497
+run_in_background	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        from background import run_in_background$/;"	kind:namespace	line:2537
+save	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def save(self):$/;"	kind:member	line:1023
+save	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def save(self, checkpoint_dir, step):$/;"	kind:member	line:469
+save_images	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def save_images(images, size, image_path):$/;"	kind:function	line:26
+save_password	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def save_password(self, account, password, service=None):$/;"	kind:member	line:2558
+save_to_path	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def save_to_path(self, filepath):$/;"	kind:member	line:377
+scipy	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^import scipy.misc$/;"	kind:namespace	line:10
+scipy	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^import scipy.misc$/;"	kind:namespace	line:14
+screenshot_imgname	../CodeLab/fun/wechat_bot/wechat_bot.py	/^def screenshot_imgname():$/;"	kind:function	line:70
+selectVideo	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def selectVideo(self):$/;"	kind:member	line:259
+send_feedback	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def send_feedback(self):$/;"	kind:member	line:2344
+send_feedback	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def send_feedback(self):$/;"	kind:member	line:581
+send_order	../CodeLab/fun/wechat_bot/wechat_bot.py	/^			send_order = u'echo "{}" | pbcopy'.format(send_text).encode('utf-8') $/;"	kind:variable	line:173
+send_text	../CodeLab/fun/wechat_bot/wechat_bot.py	/^			send_text = msg.text[5:]$/;"	kind:variable	line:172
+serializer	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def serializer(self, name):$/;"	kind:member	line:545
+serializers	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def serializers(self):$/;"	kind:member	line:577
+session_id	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def session_id(self):$/;"	kind:member	line:430
+set_last_version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def set_last_version(self, version=None):$/;"	kind:member	line:2398
+setdefault	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def setdefault(self, key, value=None):$/;"	kind:member	line:1058
+settings	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def settings(self):$/;"	kind:member	line:1611
+settings_path	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def settings_path(self):$/;"	kind:member	line:1599
+setvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def setvar(self, name, value):$/;"	kind:member	line:148
+setvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def setvar(self, name, value):$/;"	kind:member	line:239
+setvar	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^    def setvar(self, name, value):$/;"	kind:member	line:451
+shelloutput	../CodeLab/fun/google_translate_popclip_core/translate.py	/^def shelloutput(result, toclipboard, location):$/;"	kind:function	line:29
+show_help	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def show_help():$/;"	kind:function	line:405
+show_version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def show_version():$/;"	kind:function	line:2746
+shutil	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import shutil$/;"	kind:namespace	line:29
+shutil	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import shutil$/;"	kind:namespace	line:37
+signal	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import signal$/;"	kind:namespace	line:38
+signal_handler	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def signal_handler(self, signum, frame):$/;"	kind:member	line:950
+site	../CodeLab/fun/google_translate_popclip_core/translate.py	/^site = args.site$/;"	kind:variable	line:21
+socket	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import socket$/;"	kind:namespace	line:18
+split_on_delimiters	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^split_on_delimiters = re.compile('[^a-zA-Z0-9]').split$/;"	kind:variable	line:413
+ss.py	../CodeLab/fun/alfred_kyoyue_core/ss.py	1;"	kind:file	line:1
+ssr.py	../CodeLab/fun/alfred_kyoyue_core/ssr.py	1;"	kind:file	line:1
+start_label_action	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def start_label_action(self):$/;"	kind:member	line:297
+start_update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def start_update(self):$/;"	kind:member	line:2516
+store_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def store_data(self, name, data, serializer=None):$/;"	kind:member	line:1767
+store_frames_to_tmp	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    def store_frames_to_tmp(self, select_cur, vid_cur):$/;"	kind:member	line:279
+stored_data	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def stored_data(self, name):$/;"	kind:member	line:1720
+str_dict	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^def str_dict(dic):$/;"	kind:function	line:77
+stream	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def stream(self):$/;"	kind:member	line:246
+stream	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def stream(self, value):$/;"	kind:member	line:255
+strftime	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^from time import gmtime, strftime$/;"	kind:namespace	line:16
+string	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import string$/;"	kind:namespace	line:19
+string	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import string$/;"	kind:namespace	line:39
+subprocess	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^import subprocess$/;"	kind:namespace	line:17
+subprocess	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import subprocess$/;"	kind:namespace	line:30
+subprocess	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import subprocess$/;"	kind:namespace	line:29
+subprocess	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import subprocess$/;"	kind:namespace	line:40
+surge_conf.py	../CodeLab/fun/alfred_kyoyue_core/surge_conf.py	1;"	kind:file	line:1
+surge_name.py	../CodeLab/fun/alfred_kyoyue_core/surge_name.py	1;"	kind:file	line:1
+sys	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^import sys$/;"	kind:namespace	line:11
+sys	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^import sys$/;"	kind:namespace	line:15
+sys	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import sys$/;"	kind:namespace	line:31
+sys	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    import sys$/;"	kind:namespace	line:403
+sys	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import sys$/;"	kind:namespace	line:41
+sys	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^import sys$/;"	kind:namespace	line:31
+sys	../CodeLab/fun/google_translate_popclip_core/translate.py	/^import sys$/;"	kind:namespace	line:4
+tarfile	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import tarfile$/;"	kind:namespace	line:32
+target_chatgroup	../CodeLab/fun/wechat_bot/wechat_bot.py	/^target_chatgroup = f$/;"	kind:variable	line:249
+target_username	../CodeLab/fun/wechat_bot/wechat_bot.py	/^			target_username = itchat.search_friends(nickName='NEAL')[0].UserName$/;"	kind:variable	line:177
+tempfile	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import tempfile$/;"	kind:namespace	line:33
+tempfile	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import tempfile$/;"	kind:namespace	line:27
+text	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def text(self):$/;"	kind:member	line:306
+text_reply	../CodeLab/fun/wechat_bot/wechat_bot.py	/^def text_reply(msg):$/;"	kind:function	line:83
+tf	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/complete.py	/^import tensorflow as tf$/;"	kind:namespace	line:9
+tf	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import tensorflow as tf$/;"	kind:namespace	line:14
+tf	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/ops.py	/^import tensorflow as tf$/;"	kind:namespace	line:8
+tf	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^import tensorflow as tf$/;"	kind:namespace	line:16
+time	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import time$/;"	kind:namespace	line:42
+time	../CodeLab/fun/wechat_bot/wechat_bot.py	/^import time$/;"	kind:namespace	line:11
+time	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^import time$/;"	kind:namespace	line:10
+tk	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^import tkinter as tk$/;"	kind:namespace	line:9
+tkimg	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^tkimg = None  # the tkimg being showing, use in this way for a bug of ImageTk module$/;"	kind:variable	line:13
+to_json	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^from utils import pp, visualize, to_json$/;"	kind:namespace	line:14
+to_json	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def to_json(output_path, *layers):$/;"	kind:function	line:70
+toclipboard	../CodeLab/fun/google_translate_popclip_core/translate.py	/^toclipboard = args.toclipboard$/;"	kind:variable	line:23
+tool	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    tool = VideoLabelTool(window)$/;"	kind:variable	line:307
+train	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^    def train(self, config):$/;"	kind:member	line:153
+train-dcgan.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	1;"	kind:file	line:1
+transform	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def transform(image, npx=64, is_crop=True):$/;"	kind:function	line:58
+translate	../CodeLab/fun/google_translate_popclip_core/translate.py	/^def translate(query, dest='zh-CN'):$/;"	kind:function	line:68
+translate.py	../CodeLab/fun/google_translate_popclip_core/translate.py	1;"	kind:file	line:1
+tuple	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^    def tuple(self):$/;"	kind:member	line:135
+uni	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^    def uni(s):$/;"	kind:function	line:332
+unicode_literals	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:13
+unicode_literals	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:25
+unicode_literals	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:24
+unicode_literals	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^from __future__ import print_function, unicode_literals$/;"	kind:namespace	line:22
+unicode_literals	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^from __future__ import print_function, unicode_literals, absolute_import$/;"	kind:namespace	line:27
+unicodedata	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import unicodedata$/;"	kind:namespace	line:20
+unicodedata	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^import unicodedata$/;"	kind:namespace	line:43
+uninterruptible	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^class uninterruptible(object):$/;"	kind:class	line:922
+unquote	../CodeLab/fun/google_translate_popclip_core/translate.py	/^from urllib import unquote$/;"	kind:namespace	line:7
+unregister	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def unregister(self, name):$/;"	kind:member	line:556
+update	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def update(self, other):$/;"	kind:member	line:144
+update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        import update$/;"	kind:namespace	line:2528
+update	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def update(self, *args, **kwargs):$/;"	kind:member	line:1053
+update.py	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	1;"	kind:file	line:1
+update_available	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def update_available(self):$/;"	kind:member	line:2428
+update_off	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def update_off():$/;"	kind:function	line:2714
+update_on	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^        def update_on():$/;"	kind:function	line:2710
+urllib	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import urllib$/;"	kind:namespace	line:21
+urllib2	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import urllib2$/;"	kind:namespace	line:22
+urlparse	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import urlparse$/;"	kind:namespace	line:23
+utils.py	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	1;"	kind:file	line:1
+uuid	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import uuid$/;"	kind:namespace	line:34
+uuid4	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	/^                from uuid import uuid4$/;"	kind:namespace	line:443
+validate_sound	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def validate_sound(sound):$/;"	kind:function	line:152
+values	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^    def values(self):$/;"	kind:member	line:154
+version	../CodeLab/fun/alfred_kyoyue_core/ss.py	/^    version=1,$/;"	kind:variable	line:14
+version	../CodeLab/fun/alfred_kyoyue_core/ssr.py	/^    version=1,$/;"	kind:variable	line:13
+version	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def version(self):$/;"	kind:member	line:1306
+videolabeltool_final.py	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	1;"	kind:file	line:1
+visualize	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/train-dcgan.py	/^from utils import pp, visualize, to_json$/;"	kind:namespace	line:14
+visualize	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/utils.py	/^def visualize(sess, dcgan, config, option):$/;"	kind:function	line:150
+web	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import web$/;"	kind:namespace	line:32
+web.py	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	1;"	kind:file	line:1
+wechat_bot.py	../CodeLab/fun/wechat_bot/wechat_bot.py	1;"	kind:file	line:1
+wf	../CodeLab/fun/alfred_kyoyue_core/workflow/background.py	/^def wf():$/;"	kind:function	line:27
+wf	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^def wf():$/;"	kind:function	line:62
+wf	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^def wf():$/;"	kind:function	line:43
+window	../CodeLab/cv_tools/Video Label Tool By Yang Chen/code/videolabeltool_final.py	/^    window = tk.Tk()$/;"	kind:variable	line:305
+workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/notify.py	/^import workflow$/;"	kind:namespace	line:36
+workflow	../CodeLab/fun/alfred_kyoyue_core/workflow/update.py	/^import workflow$/;"	kind:namespace	line:31
+workflow.py	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	1;"	kind:file	line:1
+workflow3.py	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow3.py	1;"	kind:file	line:1
+workflowdir	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def workflowdir(self):$/;"	kind:member	line:1452
+workflowfile	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    def workflowfile(self, filename):$/;"	kind:member	line:1522
+wrapper	../CodeLab/fun/alfred_kyoyue_core/kyoyue.py	/^    def wrapper():$/;"	kind:function	line:140
+wrapper	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^            def wrapper():$/;"	kind:function	line:2666
+xml	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.ElementTree as ET$/;"	kind:namespace	line:48
+xml	../CodeLab/fun/alfred_kyoyue_core/workflow/workflow.py	/^    import xml.etree.cElementTree as ET$/;"	kind:namespace	line:46
+xrange	../CodeLab/modified_ML_codes/dcgan-completion.tensorflow-master/model.py	/^from six.moves import xrange$/;"	kind:namespace	line:15
+y_pred	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^y_pred = y_true.copy()$/;"	kind:variable	line:46
+y_true	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^         [15] * 32 + [16] * 32 + [17] * 32 + [18] * 32$/;"	kind:variable	line:44
+y_true	../CodeLab/ml_tools/plot_confusion_matrix/plot_confusion_matrix.py	/^y_true = np.array(y_true)$/;"	kind:variable	line:45
+zlib	../CodeLab/fun/alfred_kyoyue_core/workflow/web.py	/^import zlib$/;"	kind:namespace	line:24
