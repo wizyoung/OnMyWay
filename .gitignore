@@ -5,7 +5,7 @@
 *.egg-info
 
 # vscode hidden file
-/.vscode/
+/.vscode/*
 
 # macOS files
 .DS_Store 
