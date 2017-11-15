@@ -1,1 +1,8 @@
-.vscode
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
+# vscode hidden file
+.vscode/
