@@ -1,0 +1,29 @@
+sth about itchat:
+
+msg <class 'itchat.storage.messagequeue.Message'> AttributeDict dict
+(repr(k),repr(v)) for k,v in self.items()
+msg['FromUserName']: 消息发送者
+msg['ToUserName']: 消息接受者
+msg.user[u'UserName']: 聊天窗口的对象
+
+我 to 妈: 我，妈，妈
+妈 to 我: 妈，我，妈
+我 to 我: 我，我，我
+
+msg.user: <class 'itchat.storage.templates.User'>
+
+itchat.get_friends() 返回类型 <class 'itchat.storage.templates.ContactList'>
+print 时返回的类型是 list, 每一个元素都是一个 User 元素，其中第一个元素为我自己的用户信息。
+所以friend_list = itchat.get_friends(),friend_list[0].UserName是我自己的 UserName
+可以用
+friend_list = itchat.get_friends()
+friend_dict={}
+for i in friend_list:
+    friend_dict[i.NickName] = i
+来获取 NickName-User 字典，便于查询
+或者直接用itchat.search_friends(nickName='NEAL')[0].NickName获取指定人的 NickName
+
+—
+关于a = itchat.search_chatrooms(name=u’xx’)[0]:
+xx为真正的群名。搜索到只有一个人的群时，print a 居然为空。
+a.NickName，a.UserName为目标
