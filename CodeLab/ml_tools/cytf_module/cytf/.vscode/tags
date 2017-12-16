@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Initializer	../initializers.py	/^from tensorflow.python.ops.init_ops import Initializer$/;"	kind:namespace	line:3
+VarianceScaling	../initializers.py	/^from tensorflow.python.ops.init_ops import VarianceScaling$/;"	kind:namespace	line:4
+__all__	../activations.py	/^__all__ = ['relu',$/;"	kind:variable	line:4
+__all__	../initializers.py	/^__all__ = ['glorot_uniform',$/;"	kind:variable	line:8
+__call__	../layer.py	/^    def __call__(self, x, train=True):$/;"	kind:member	line:162
+__init__	../layer.py	/^    def __init__(self, decay=0.9):$/;"	kind:member	line:155
+__init__.py	../__init__.py	1;"	kind:file	line:1
+activations.py	../activations.py	1;"	kind:file	line:1
+batch_norm	../layer.py	/^class batch_norm(object):$/;"	kind:class	line:153
+conv2d	../layer.py	/^def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initializer=None, name='conv2',$/;"	kind:function	line:10
+glorot_normal	../initializers.py	/^def glorot_normal(seed=None, dtype=tf.float32):$/;"	kind:function	line:30
+glorot_uniform	../initializers.py	/^def glorot_uniform(seed=None, dtype=tf.float32):$/;"	kind:function	line:23
+he_normal	../initializers.py	/^def he_normal(seed=None, mode='fan_in', dtype=tf.float32):$/;"	kind:function	line:40
+he_uniform	../initializers.py	/^def he_uniform(seed=None, mode='fan_in', dtype=tf.float32):$/;"	kind:function	line:50
+initializers.py	../initializers.py	1;"	kind:file	line:1
+layer.py	../layer.py	1;"	kind:file	line:1
+preset_activations	../activations.py	/^preset_activations = ['relu',$/;"	kind:variable	line:16
+preset_initializers	../initializers.py	/^preset_initializers = ['glorot_uniform',$/;"	kind:variable	line:16
+relu	../activations.py	/^relu = tf.nn.relu$/;"	kind:variable	line:11
+sigmoid	../activations.py	/^sigmoid = tf.nn.sigmoid$/;"	kind:variable	line:12
+sys	../layer.py	/^import sys$/;"	kind:namespace	line:8
+tanh	../activations.py	/^tanh = tf.nn.tanh$/;"	kind:variable	line:13
+tf	../activations.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../initializers.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../layer.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../tfboard_utils.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tfboard_utils.py	../tfboard_utils.py	1;"	kind:file	line:1
+variable_summaries	../layer.py	/^from cytf.tfboard_utils import variable_summaries$/;"	kind:namespace	line:7
+variable_summaries	../tfboard_utils.py	/^def variable_summaries(var, name, mean=True, sigma=True, scope=None):$/;"	kind:function	line:4
+xavier_normal	../initializers.py	/^xavier_normal = glorot_normal$/;"	kind:variable	line:38
+xavier_uniform	../initializers.py	/^xavier_uniform = glorot_uniform$/;"	kind:variable	line:37

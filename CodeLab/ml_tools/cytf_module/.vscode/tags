@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BN	../mnist.py	/^             BN=True)$/;"	kind:variable	line:17
+BN	../mnist.py	/^             BN=True)$/;"	kind:variable	line:24
+Initializer	../cytf/initializers.py	/^from tensorflow.python.ops.init_ops import Initializer$/;"	kind:namespace	line:3
+VarianceScaling	../cytf/initializers.py	/^from tensorflow.python.ops.init_ops import VarianceScaling$/;"	kind:namespace	line:4
+W	../mnist.py	/^    W = tf.get_variable(name='weights', shape=[1024, 10],$/;"	kind:variable	line:40
+W	../mnist.py	/^    W = tf.get_variable(name='weights', shape=[input_shape[1]*input_shape[2]*input_shape[3], 1024],$/;"	kind:variable	line:34
+__all__	../cytf/activations.py	/^__all__ = ['relu',$/;"	kind:variable	line:4
+__all__	../cytf/initializers.py	/^__all__ = ['glorot_uniform',$/;"	kind:variable	line:8
+__call__	../cytf/layer.py	/^    def __call__(self, x, train=True):$/;"	kind:member	line:157
+__init__	../cytf/layer.py	/^    def __init__(self, decay=0.9):$/;"	kind:member	line:150
+__init__.py	../cytf/__init__.py	1;"	kind:file	line:1
+a.py	../a.py	1;"	kind:file	line:1
+accuracy	../mnist.py	/^        accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))$/;"	kind:variable	line:52
+activations.py	../cytf/activations.py	1;"	kind:file	line:1
+b	../mnist.py	/^    b = tf.get_variable(name='biases', shape=[1024], initializer=tf.zeros_initializer())$/;"	kind:variable	line:36
+b	../mnist.py	/^    b = tf.get_variable(name='biases', shape=[10], initializer=tf.zeros_initializer())                 $/;"	kind:variable	line:42
+batch	../mnist.py	/^        batch = mnist.train.next_batch(50)$/;"	kind:variable	line:63
+batch_norm	../cytf/layer.py	/^class batch_norm(object):$/;"	kind:class	line:148
+conv2d	../a.py	/^from cytf.layer import conv2d$/;"	kind:namespace	line:2
+conv2d	../cytf/layer.py	/^def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initializer=None, name='conv2',$/;"	kind:function	line:10
+conv2d	../mnist.py	/^from cytf.layer import conv2d$/;"	kind:namespace	line:4
+correct_prediction	../mnist.py	/^        correct_prediction = tf.equal(tf.argmax(y_pred, 1), tf.argmax(y_, 1))$/;"	kind:variable	line:51
+cross_entropy	../mnist.py	/^        cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=y_pred, labels=y_))$/;"	kind:variable	line:47
+feed_dict	../mnist.py	/^                              feed_dict={x: batch[0], y_: batch[1]})$/;"	kind:variable	line:65
+glorot_normal	../cytf/initializers.py	/^def glorot_normal(seed=None, dtype=tf.float32):$/;"	kind:function	line:30
+glorot_uniform	../cytf/initializers.py	/^def glorot_uniform(seed=None, dtype=tf.float32):$/;"	kind:function	line:23
+he_normal	../cytf/initializers.py	/^def he_normal(seed=None, mode='fan_in', dtype=tf.float32):$/;"	kind:function	line:40
+he_normal	../mnist.py	/^from cytf.initializers import he_normal$/;"	kind:namespace	line:5
+he_uniform	../cytf/initializers.py	/^def he_uniform(seed=None, mode='fan_in', dtype=tf.float32):$/;"	kind:function	line:50
+init	../mnist.py	/^    init = tf.global_variables_initializer()$/;"	kind:variable	line:59
+initializer	../mnist.py	/^                        initializer=he_normal())$/;"	kind:variable	line:35
+initializer	../mnist.py	/^                        initializer=he_normal())$/;"	kind:variable	line:41
+initializers.py	../cytf/initializers.py	1;"	kind:file	line:1
+input	../a.py	/^input = tf.get_variable('x', shape=[100, 32, 32, 3])$/;"	kind:variable	line:5
+input_data	../mnist.py	/^from tensorflow.examples.tutorials.mnist import input_data$/;"	kind:namespace	line:7
+input_shape	../mnist.py	/^    input_shape = net.get_shape().as_list()$/;"	kind:variable	line:30
+layer.py	../cytf/layer.py	1;"	kind:file	line:1
+merged	../mnist.py	/^    merged = tf.summary.merge_all()$/;"	kind:variable	line:57
+mnist	../mnist.py	/^mnist = input_data.read_data_sets('MNIST_data', one_hot=True)$/;"	kind:variable	line:8
+mnist.py	../mnist.py	1;"	kind:file	line:1
+net	../a.py	/^net = conv2d(input, 64, [3, 3], stride=[1, 1], padding='same', name='layer1_left\/conv2', regualizer={'l2':0.004}, $/;"	kind:variable	line:6
+net	../a.py	/^net = conv2d(net, 128, [3, 3], stride=[1, 1], padding='same', name='layer2_left\/conv2', regualizer={'l2':0.004}, $/;"	kind:variable	line:8
+net	../mnist.py	/^    net = tf.nn.max_pool(net, [1, 2, 2, 1], [1, 2, 2, 1], padding='SAME', name='max_pool')    $/;"	kind:variable	line:27
+net	../mnist.py	/^    net = tf.nn.max_pool(net, [1, 2, 2, 1], [1, 2, 2, 1], padding='SAME', name='max_pool')$/;"	kind:variable	line:20
+net	../mnist.py	/^    net = tf.nn.relu(tf.matmul(net, W) + b)$/;"	kind:variable	line:37
+net	../mnist.py	/^    net = tf.reshape(net, [-1, input_shape[1]*input_shape[2]*input_shape[3]])$/;"	kind:variable	line:31
+net	../mnist.py	/^net = conv2d(net, 64, [5, 5], 1, 'same', initializer='he_normal',$/;"	kind:variable	line:22
+net	../mnist.py	/^net = conv2d(x_image, 32, [5, 5], 1, 'same', initializer='he_normal',$/;"	kind:variable	line:15
+net_	../a.py	/^net_ = conv2d(input, 64, [3, 3], stride=[1, 1], padding='same', name='layer1_right\/conv2', regualizer={'l2':0.004}, $/;"	kind:variable	line:11
+net_	../a.py	/^net_ = conv2d(net_, 128, [3, 3], stride=[1, 1], padding='same', name='layer2_right\/conv2', regualizer={'l2':0.004}, $/;"	kind:variable	line:13
+np	../mnist.py	/^import numpy as np$/;"	kind:namespace	line:3
+output	../a.py	/^    output = tf.concat([net, net_], axis=0, name='combine')$/;"	kind:variable	line:17
+pprint	../a.py	/^from pprint import pprint$/;"	kind:namespace	line:3
+preset_activations	../cytf/activations.py	/^preset_activations = ['relu',$/;"	kind:variable	line:16
+preset_initializers	../cytf/initializers.py	/^preset_initializers = ['glorot_uniform',$/;"	kind:variable	line:16
+relu	../cytf/activations.py	/^relu = tf.nn.relu$/;"	kind:variable	line:11
+sigmoid	../cytf/activations.py	/^sigmoid = tf.nn.sigmoid$/;"	kind:variable	line:12
+sys	../cytf/layer.py	/^import sys$/;"	kind:namespace	line:8
+tanh	../cytf/activations.py	/^tanh = tf.nn.tanh$/;"	kind:variable	line:13
+tf	../a.py	/^import tensorflow as tf$/;"	kind:namespace	line:1
+tf	../cytf/activations.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../cytf/initializers.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../cytf/layer.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../cytf/tfboard_utils.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tf	../mnist.py	/^import tensorflow as tf$/;"	kind:namespace	line:2
+tfboard_utils.py	../cytf/tfboard_utils.py	1;"	kind:file	line:1
+train_step	../mnist.py	/^        train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)$/;"	kind:variable	line:49
+variable_summaries	../cytf/layer.py	/^from cytf.tfboard_utils import variable_summaries$/;"	kind:namespace	line:7
+variable_summaries	../cytf/tfboard_utils.py	/^def variable_summaries(var, name, mean=True, sigma=True, scope=None):$/;"	kind:function	line:4
+writer	../a.py	/^writer = tf.summary.FileWriter('.\/log', tf.get_default_graph())$/;"	kind:variable	line:19
+writer	../mnist.py	/^    writer = tf.summary.FileWriter('.\/log', sess.graph)$/;"	kind:variable	line:58
+x	../mnist.py	/^    x = tf.placeholder(tf.float32, shape=[None, 784])$/;"	kind:variable	line:11
+x_image	../mnist.py	/^    x_image = tf.reshape(x, [-1, 28, 28, 1], name='input_image')$/;"	kind:variable	line:12
+xavier_normal	../cytf/initializers.py	/^xavier_normal = glorot_normal$/;"	kind:variable	line:38
+xavier_uniform	../cytf/initializers.py	/^xavier_uniform = glorot_uniform$/;"	kind:variable	line:37
+y_	../mnist.py	/^    y_ = tf.placeholder(tf.float32, shape=[None, 10], name='input_y')$/;"	kind:variable	line:13
+y_pred	../mnist.py	/^    y_pred = tf.matmul(net, W) + b$/;"	kind:variable	line:43
