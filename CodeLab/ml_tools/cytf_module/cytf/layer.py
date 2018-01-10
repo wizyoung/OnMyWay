@@ -1,12 +1,13 @@
 # coding: utf-8
 import tensorflow as tf
-# from cytf.layers.base_layer import Layer 
-# from base_layer import Layer
 from cytf.initializers import *
 from cytf.activations import *
 from cytf.tfboard_utils import variable_summaries
+from cytf.arg_scope import *
+from tensorflow.contrib.layers.python.layers import utils
 import sys
 
+@add_arg_scope
 def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initializer=None, name='conv2',
            activation=None, regualizer=None, TFboard_recording=None, train=True, BN=None, 
            ema=False, ema_op=None
@@ -147,6 +148,7 @@ def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initialize
 
     return net
 
+@add_arg_scope
 def dense(input, num_outputs, name='dense', initializer=None, ema=False, ema_op=None, TFboard_recording=None,
           BN=False, regualizer=None, train=True, activation=None):
     '''
@@ -244,6 +246,7 @@ def dense(input, num_outputs, name='dense', initializer=None, ema=False, ema_op=
 
     return net    
 
+@add_arg_scope
 def flatten(input, name='flatten'):
     input_shape = input.get_shape().as_list()
 
@@ -258,6 +261,7 @@ def flatten(input, name='flatten'):
         net = tf.reshape(input, [-1, output_length])
         return net
 
+@add_arg_scope
 def max_pool(input, ksize, stride=2, padding='VALID', name='maxpool'):
     '''
     ksize:
@@ -279,6 +283,7 @@ def max_pool(input, ksize, stride=2, padding='VALID', name='maxpool'):
         net = tf.nn.max_pool(input, ksize=kernel_size, strides=strides, padding=padding.upper())
         return net
 
+@add_arg_scope
 def activation(input, activation_func=None, name='activation', TFboard_recording=False):
     '''
     activation_func:
@@ -298,6 +303,11 @@ def activation(input, activation_func=None, name='activation', TFboard_recording
         
         return net
 
+@add_arg_scope
+def dropout(input, keep_prob=None, name='dropout'):
+    with tf.variable_scope(name):
+        net = tf.nn.dropout(input, keep_prob=keep_prob, name=name)
+        return net
 
 class batch_norm(object):
 
@@ -311,8 +321,11 @@ class batch_norm(object):
     def __call__(self, x, train=True):
         shape = x.get_shape().as_list()
 
+        # for placeholder case. if train is a tensor with a bool type, we
+        # cannot use 'if train' or 'if train is True'
+
         with tf.variable_scope('batch_norm') as scope:
-            if train:
+            def batch_norm_training():
                 self.beta = tf.get_variable("beta", [shape[-1]],
                                             initializer=tf.constant_initializer(0.))
                 self.gamma = tf.get_variable("gamma", [shape[-1]],
@@ -333,8 +346,16 @@ class batch_norm(object):
                 # compute the ema first
                 with tf.control_dependencies([ema_apply_op]):
                     mean, var = tf.identity(batch_mean), tf.identity(batch_var)
-            else:
+                return mean, var
+
+            def batch_norm_inference():
                 mean, var = self.ema_mean, self.ema_var
+                return mean, var
+
+            if isinstance(train, tf.Tensor):
+                mean, var = tf.cond(tf.equal(train, tf.constant(True)), batch_norm_training, batch_norm_inference)
+            else:
+                print 'failed'
 
             normed = tf.nn.batch_normalization(
             x, mean, var, self.beta, self.gamma, self.epsilon, name='compute')
