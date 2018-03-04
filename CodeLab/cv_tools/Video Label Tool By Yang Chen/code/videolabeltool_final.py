@@ -2,10 +2,8 @@
 
 import glob
 import os
-
 import cv2
 import numpy as np
-import cv2
 import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk

@@ -99,6 +99,7 @@ def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initialize
 
         net = tf.identity(tf.nn.conv2d(input, W, strides=strides, padding=padding.upper()) + b,
                         name='Wx_plus_b')
+                        
         if TFboard_recording and TFboard_recording[2]:
             if not summary_scope:
                 summary_scope = variable_summaries(net, 'Wx_plus_b')
@@ -115,7 +116,7 @@ def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initialize
             net = bn(net, train=train)
             if TFboard_recording and TFboard_recording[3]:
                 if not summary_scope:
-                    summary_scope = variable_scope(net, 'BN')
+                    summary_scope = variable_summaries(net, 'BN')
                 else:
                     variable_summaries(net, 'BN', scope=summary_scope.original_name_scope)
 
@@ -213,7 +214,7 @@ def dense(input, num_outputs, name='dense', initializer=None, ema=False, ema_op=
             net = bn(net, train=train)
             if TFboard_recording and TFboard_recording[3]:
                 if not summary_scope:
-                    summary_scope = variable_scope(net, 'BN')
+                    summary_scope = variable_summaries(net, 'BN')
                 else:
                     variable_summaries(net, 'BN', scope=summary_scope.original_name_scope)
         
@@ -318,6 +319,7 @@ class batch_norm(object):
 
         self.ema = tf.train.ExponentialMovingAverage(decay=self.decay)
 
+
     def __call__(self, x, train=True):
         shape = x.get_shape().as_list()
 
@@ -325,31 +327,32 @@ class batch_norm(object):
         # cannot use 'if train' or 'if train is True'
 
         with tf.variable_scope('batch_norm') as scope:
-            def batch_norm_training():
-                self.beta = tf.get_variable("beta", [shape[-1]],
+            
+            beta = tf.get_variable("beta", [shape[-1]],
                                             initializer=tf.constant_initializer(0.))
-                self.gamma = tf.get_variable("gamma", [shape[-1]],
-                                             initializer=tf.random_normal_initializer(1., 0.02))
+            gamma = tf.get_variable("gamma", [shape[-1]],
+                                             initializer=tf.constant_initializer(1.))
+
+            def batch_norm_training():
 
                 if len(shape) > 2:
                     # conv layer
-                    batch_mean, batch_var = tf.nn.moments(x, [0, 1, 2], name='moments')
+                    self.batch_mean, self.batch_var = tf.nn.moments(x, [0, 1, 2], name='moments')
                     
                 else:
                     # dense layer
-                    batch_mean, batch_var = tf.nn.moments(x, [0], name='moments')
+                    self.batch_mean, self.batch_var = tf.nn.moments(x, [0], name='moments')
 
                 # TODO: ema_apply name is quite long, try to fix it
-                ema_apply_op = self.ema.apply([batch_mean, batch_var])
-                self.ema_mean, self.ema_var = self.ema.average(batch_mean), self.ema.average(batch_var)
+                ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var])
 
                 # compute the ema first
                 with tf.control_dependencies([ema_apply_op]):
-                    mean, var = tf.identity(batch_mean), tf.identity(batch_var)
+                    mean, var = tf.identity(self.batch_mean), tf.identity(self.batch_var)
                 return mean, var
 
             def batch_norm_inference():
-                mean, var = self.ema_mean, self.ema_var
+                mean, var = self.ema.average(self.batch_mean), self.ema.average(self.batch_var)
                 return mean, var
 
             if isinstance(train, tf.Tensor):
@@ -358,6 +361,6 @@ class batch_norm(object):
                 print 'failed'
 
             normed = tf.nn.batch_normalization(
-            x, mean, var, self.beta, self.gamma, self.epsilon, name='compute')
+            x, mean, var, beta, gamma, self.epsilon, name='compute')
 
             return normed
