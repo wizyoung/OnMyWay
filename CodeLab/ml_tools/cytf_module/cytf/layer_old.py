@@ -323,7 +323,7 @@ class batch_norm(object):
         shape = x.get_shape().as_list()
 
         with tf.variable_scope('batch_norm') as scope:
-            if train is not None:
+            if train:
                 self.beta = tf.get_variable("beta", [shape[-1]],
                                             initializer=tf.constant_initializer(0.))
                 self.gamma = tf.get_variable("gamma", [shape[-1]],

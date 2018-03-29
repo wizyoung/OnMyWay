@@ -90,6 +90,7 @@ def conv2d(input, num_outputs, kernel_size, stride=1, padding='SAME', initialize
             if not summary_scope:
                 summary_scope = variable_summaries(W, 'W')
             else:
+                # .original_name_scope has the nested scope name form
                 variable_summaries(W, 'W', scope=summary_scope.original_name_scope)
         if TFboard_recording and TFboard_recording[1]:
             if not summary_scope:
@@ -330,20 +331,26 @@ class batch_norm(object):
             
             beta = tf.get_variable("beta", [shape[-1]],
                                             initializer=tf.constant_initializer(0.))
+            # gamma = tf.get_variable("gamma", [shape[-1]],
+            #                                  initializer=tf.constant_initializer(1.))
             gamma = tf.get_variable("gamma", [shape[-1]],
-                                             initializer=tf.constant_initializer(1.))
+                                             initializer=tf.random_normal_initializer(mean=1.0, stddev=0.002))
 
             def batch_norm_training():
 
-                if len(shape) > 2:
-                    # conv layer
-                    self.batch_mean, self.batch_var = tf.nn.moments(x, [0, 1, 2], name='moments')
-                    
-                else:
-                    # dense layer
-                    self.batch_mean, self.batch_var = tf.nn.moments(x, [0], name='moments')
+                input_ndim = len(shape)
+                axis = list(range(input_ndim - 1))
 
-                # TODO: ema_apply name is quite long, try to fix it
+                self.batch_mean, self.batch_var = tf.nn.moments(x, axis, name='moments')
+
+                # if len(shape) > 2:
+                #     # conv layer
+                #     self.batch_mean, self.batch_var = tf.nn.moments(x, [0, 1, 2], name='moments')
+                    
+                # else:
+                #     # dense layer
+                #     self.batch_mean, self.batch_var = tf.nn.moments(x, [0], name='moments')
+
                 ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var])
 
                 # compute the ema first
@@ -352,13 +359,21 @@ class batch_norm(object):
                 return mean, var
 
             def batch_norm_inference():
+                # Note: the names of mean and var may have duplicated scope name prefixs
+                # This behavior is actually a bug of TensorFlow, refer to https://github.com/tensorflow/tensorflow/issues/2740
+                # A compromise way is to wrap the ema_apply_op line above with force variable scope setting:
+                # with tf.variable_scope(bn_scope):
+                #     ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var])
+                # and you need to set the following codes at the outside of all functions:
+                # with tf.variable_scope('BN_params') as bn_scope:
+                #     pass
                 mean, var = self.ema.average(self.batch_mean), self.ema.average(self.batch_var)
                 return mean, var
 
             if isinstance(train, tf.Tensor):
                 mean, var = tf.cond(tf.equal(train, tf.constant(True)), batch_norm_training, batch_norm_inference)
             else:
-                print 'failed'
+                raise NotImplementedError
 
             normed = tf.nn.batch_normalization(
             x, mean, var, beta, gamma, self.epsilon, name='compute')

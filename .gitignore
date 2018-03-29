@@ -3,9 +3,13 @@
 *.so
 *.egg
 *.egg-info
+*.pyc
 
 # vscode hidden file
 /.vscode/*
 
 # macOS files
 .DS_Store 
+
+# tensorflow
+*.ckpt

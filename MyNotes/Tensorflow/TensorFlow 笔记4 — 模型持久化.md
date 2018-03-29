@@ -1,5 +1,4 @@
 # TensorFlow 笔记4 — 模型持久化
-
 <!-- TOC -->
 
 - [TensorFlow 笔记4 — 模型持久化](#tensorflow-笔记4--模型持久化)
@@ -218,7 +217,7 @@ tf.train.import_meta_graph(meta_graph_or_file, clear_devices=False,  import_scop
 
 (1) 代码中的 get_tensor_by_name 要写完整 Tensor 名字，即 node:src 的格式。
 
-(2) 使用 tf.tran.import_meta_graph() 后，后面使用原模型中的变量时，要初始化，无论是用 saver.restore() 还是用 tf.global_variables_initializer() 都可以，都是加载原模型中的变量值。
+(2) 使用 tf.tran.import_meta_graph() 后，后面使用原模型中的变量时，要初始化，无论是用 saver.restore() 还是用 tf.global_variables_initializer() 都可以，都是加载原模型中的变量值。在只想载入部分保存的数据时，必须先使用 tf.global_variables_initializer() 函数，再用 saver.restore() 函数。 
 
 ### 3.2 保存/加载部分变量
 
@@ -394,7 +393,8 @@ def load_graph(frozen_graph_filename):
 
     # 返回的时候默认给每个 node 名字前加 'prefix'，
     # 避免对当前 graph 中的变量产生影响.
-    # 注意：如果不设定 name, tf 自动加前缀 'import'
+    # 注意：如果不设定 name, tf 自动加前缀 'import'.
+    # 令 name = '' 就可以不加前缀
     # 返回一个 graph
     with tf.Graph().as_default() as graph:
         tf.import_graph_def(graph_def, name='prefix')
@@ -425,7 +425,60 @@ print all_vars
 print reader.get_tensor('v1')  # 1.0
 ```
 
-返回的 all_vars 是一个 dict，里面每个元素的 key 为变量名(不带后面的 src 号)，value 为 shape。上面代码的 all_vars 返回结果为: `{'v1': [1], 'v2': [1]}`。可用 reader.get_tensor() 直接获取变量数值。
+返回的 all_vars 是一个 dict，里面每个元素的 key 为变量名(不带后面的 src 号)，value 为 shape。上面代码的 all_vars 返回结果为: `{'v1': [1], 'v2': [1]}`。可用 reader.get_tensor() 直接获取变量数值，使用reader.get_tensor() 获得返回值是 ndarray 类型数据。
+
+利用这个函数很容易做到在更复杂的模型中只恢复前几层网络中的部分权重:
+
+```python
+reader = tf.train.NewCheckpointReader('save1/model.ckpt-100')
+all_vars = reader.get_variable_to_shape_map() # dict
+
+# 这个函数返回 list，元素是从当前 graph 中根据 include 和 exclude 通配获取的变量
+variables_to_restore = tf.contrib.framework.get_variables_to_restore(include=all_vars.keys())
+
+saver = tf.train.Saver(variables_to_restore)
+...
+sess.save(...)
+```
+
+进一步，若有变量旧模型变量名称不一致，可用以下方法进行替换:
+
+```python
+def replace_var_names_of_ckpt(old_name_list, new_name_list, all_vars_list):
+    '''对旧的 ckpt 中的权重变量等进行更名
+    old_name_list: 旧图中需要更改的变量名
+    new_name_list: 旧图中需要更改为的对应新图中的变量名
+    all_vars_list: 为 str 时是 ckpt 文件路径；为 dict 时是 reader.get_variable_to_shape_map() 返回值;
+                   为 list 时是旧图中的所有变量名列表
+    '''
+
+    if isinstance(all_vars_list, str):
+        all_vars_list = tf.train.NewCheckpointReader(all_vars_list).get_variable_to_shape_map().keys()
+    elif isinstance(all_vars_list, dict):
+        all_vars_list = all_vars_list.keys()
+
+    # 保留未更改的名字
+    for name in old_name_list:
+        all_vars_list.remove(name)
+    variables_to_restore = tf.contrib.framework.get_variables_to_restore(all_vars_list)
+    # 组成dict
+    load_var_dict = dict(zip(all_vars_list, variables_to_restore))
+
+    new_name_var_list = [tf.get_collection('variables', new_name)[0] for new_name in new_name_list]
+
+    load_var_dict.update(dict(zip(old_name_list, new_name_var_list)))
+
+    return load_var_dict
+
+reader = tf.train.NewCheckpointReader('save1/model.ckpt-100')
+all_vars = reader.get_variable_to_shape_map()
+
+load_var_dict = replace_var_names_of_ckpt(old_name_list=['conv/v1'], new_name_list=['cond/v1'], all_vars_list=all_vars.keys())
+
+saver = tf.train.Saver(load_var_dict)
+```
+
+
 
 ### 3.6 利用预训练的 VGG-16 做迁移学习
 
@@ -472,7 +525,7 @@ MetaGraphDef 中包含以下几部分:
 
 MetaInfoDef Protobuf 的定义:
 
-```
+```json
 message MetaInfoDef{
   string meta_graph_version = 1;  // 计算图版本号
   Oplist stripped_op_list = 2;  // 图中用到的所有运算方法的信息
@@ -483,7 +536,7 @@ message MetaInfoDef{
 
  MetaInfoDef 中 stripped_op_list 记录了图中用到的所有运算(op)方法的信息，如果某一个运算出现了多次，在 stripped_op_list 中只记录一次。stripped_op_list 里面的元素是 OpDef，每一个 OpDef 记录了 op 的详细信息。如 Add 这个 op：
 
-``` 
+``` json
 op {
       name: "Add"  // 名称
       input_arg {  // 输入
@@ -519,7 +572,7 @@ GraphDef 主要记录的是运算图中的节点(node)信息。因为 MetaInfoDe
 
 GraphDef 里面的元素主要是 NodeDef，GraphDef 的定义为:
 
-```
+```json
 message GraphDef{
   repeated NodeDef node = 1;  
   VersionDef versions = 2;  
@@ -535,7 +588,7 @@ message NodeDef{
 
 比如 v1 这个 Variable node:
 
-```
+```json
 node {
     name: "v1"
     op: "VariableV2"
@@ -586,7 +639,7 @@ node {
 
 SaverDef 中主要记录了模型持久化时需要的一些参数，如保存操作和加载操作在 GraphDef 中的名称，保存的频率，清理历史记录等。因为  SaverDef 比较简单，我们直接看这部分文件的信息：
 
-```
+```json
 saver_def {
   filename_tensor_name: "save/Const:0"
   save_tensor_name: "save/control_dependency:0"
@@ -603,7 +656,7 @@ save 保存这个操作在 GraphDef 中对应的 node 的 name 就是 save/contr
 
 TensorFlow 中的图中可以维护不同集合(collections)，其底层实现就是通过 CollectionDef 这个属性：
 
-```
+```json
 collection_def {
   key: "trainable_variables"
   value {
