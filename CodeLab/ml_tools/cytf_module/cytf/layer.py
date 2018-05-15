@@ -4,6 +4,7 @@ from cytf.initializers import *
 from cytf.activations import *
 from cytf.tfboard_utils import variable_summaries
 from cytf.arg_scope import *
+from cytf.utils import *
 from tensorflow.contrib.layers.python.layers import utils
 import sys
 
@@ -314,18 +315,14 @@ def dropout(input, keep_prob=None, name='dropout'):
 class batch_norm(object):
 
     def __init__(self, decay=0.9):
-        self.epsilon = 1e-5
-        # use numbers closer to 1 if you have more data
+        self.epsilon = 1e-5  # use numbers closer to 1 if you have more data
         self.decay = decay
 
-        self.ema = tf.train.ExponentialMovingAverage(decay=self.decay)
+        self.ema = EMA(decay=self.decay, scope_suffix='moving_average')
 
 
     def __call__(self, x, train=True):
         shape = x.get_shape().as_list()
-
-        # for placeholder case. if train is a tensor with a bool type, we
-        # cannot use 'if train' or 'if train is True'
 
         with tf.variable_scope('batch_norm') as scope:
             
@@ -343,15 +340,7 @@ class batch_norm(object):
 
                 self.batch_mean, self.batch_var = tf.nn.moments(x, axis, name='moments')
 
-                # if len(shape) > 2:
-                #     # conv layer
-                #     self.batch_mean, self.batch_var = tf.nn.moments(x, [0, 1, 2], name='moments')
-                    
-                # else:
-                #     # dense layer
-                #     self.batch_mean, self.batch_var = tf.nn.moments(x, [0], name='moments')
-
-                ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var])
+                ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var], ['mean', 'variance'])
 
                 # compute the ema first
                 with tf.control_dependencies([ema_apply_op]):
@@ -359,21 +348,11 @@ class batch_norm(object):
                 return mean, var
 
             def batch_norm_inference():
-                # Note: the names of mean and var may have duplicated scope name prefixs
-                # This behavior is actually a bug of TensorFlow, refer to https://github.com/tensorflow/tensorflow/issues/2740
-                # A compromise way is to wrap the ema_apply_op line above with force variable scope setting:
-                # with tf.variable_scope(bn_scope):
-                #     ema_apply_op = self.ema.apply([self.batch_mean, self.batch_var])
-                # and you need to set the following codes at the outside of all functions:
-                # with tf.variable_scope('BN_params') as bn_scope:
-                #     pass
                 mean, var = self.ema.average(self.batch_mean), self.ema.average(self.batch_var)
                 return mean, var
 
-            if isinstance(train, tf.Tensor):
-                mean, var = tf.cond(tf.equal(train, tf.constant(True)), batch_norm_training, batch_norm_inference)
-            else:
-                raise NotImplementedError
+            train = tf.convert_to_tensor(train)
+            mean, var = tf.cond(tf.equal(train, tf.constant(True)), batch_norm_training, batch_norm_inference)
 
             normed = tf.nn.batch_normalization(
             x, mean, var, beta, gamma, self.epsilon, name='compute')
